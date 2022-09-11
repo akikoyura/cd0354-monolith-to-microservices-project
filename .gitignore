@@ -44,3 +44,4 @@ start.sh
 set_env.sh
 set_env_local.sh
 set_env_remote.sh
+deploy.sh

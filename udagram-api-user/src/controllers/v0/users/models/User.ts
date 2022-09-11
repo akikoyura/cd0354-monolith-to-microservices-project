@@ -2,9 +2,6 @@ import {Table, Column, Model, PrimaryKey, CreatedAt, UpdatedAt} from 'sequelize-
 
 @Table
 export class User extends Model<User> {
-    static findByPk(id: any) {
-        throw new Error("Method not implemented.");
-    }
     @PrimaryKey
     @Column
     public email!: string;
