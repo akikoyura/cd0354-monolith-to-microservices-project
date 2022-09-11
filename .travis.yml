@@ -2,6 +2,11 @@ language: generic
 services:
   - docker
 
+# we want our travis run on only master branch
+branches:
+  only:
+    - master
+
 # Pre-testing installs
 install:
   - echo "nothing needs to be installed"
