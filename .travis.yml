@@ -32,5 +32,6 @@ after_success:
   - docker push akikoyura/udagram-api-user:v1
   - docker push akikoyura/udagram-frontend:v1
   - docker push akikoyura/reverseproxy:v1
+  - echo "All actions were done"
 
 
