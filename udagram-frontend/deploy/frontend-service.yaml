@@ -4,8 +4,6 @@ metadata:
   labels:
     app: udagram-frontend
   name: udagram-frontend-svc
-  namespace: default
-  selfLink: /api/v1/namespaces/default/services/udagram-frontend-svc
 spec:
   ports:
     - port: 8100
@@ -14,5 +12,3 @@ spec:
   selector:
     app: udagram-frontend
   type: LoadBalancer
-status:
-  loadBalancer: { }

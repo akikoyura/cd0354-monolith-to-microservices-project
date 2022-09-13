@@ -4,8 +4,6 @@ metadata:
   labels:
     app: reverseproxy
   name: reverseproxy-svc
-  namespace: default
-  selfLink: /api/v1/namespaces/default/services/reverseproxy-svc
 spec:
   ports:
     - port: 8080
@@ -13,7 +11,4 @@ spec:
       targetPort: 8080
   selector:
     app: reverseproxy
-  sessionAffinity: None
-  type: ClusterIP
-status:
-  loadBalancer: { }
+  type: LoadBalancer
