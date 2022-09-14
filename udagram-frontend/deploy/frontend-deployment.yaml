@@ -13,13 +13,14 @@ spec:
     metadata:
       labels:
         app: udagram-frontend
+        api: external
     spec:
       containers:
         - name: udagram-frontend
           image: akikoyuri/udagram-frontend:v1
           imagePullPolicy: Always
           ports:
-            - containerPort: 8100
+            - containerPort: 80
           resources:
             requests:
               memory: "64Mi"
